@@ -1,0 +1,94 @@
+/* LoginComponent.css */
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .login-container {
+    background: linear-gradient(to right, #ff512f, #dd2476); /* Gradient background */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .login-container h1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .input-field {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background 0.3s;
+  }
+  
+  .input-field:focus {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+  
+  .login-button {
+    background: #ff512f;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s ease-in-out;
+  }
+  
+  .login-button:hover {
+    background: #dd2476;
+    transform: scale(1.1);
+  }
+  
+  .error-message {
+    color: #ffb3b3;
+    font-size: 1rem;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .login-form {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  

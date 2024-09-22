@@ -1,0 +1,64 @@
+/* buket.css */
+
+@keyframes slideIn {
+    0% {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .bucket {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  .bucket h3 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .input-group .form-control {
+    border-radius: 20px;
+    margin-right: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .input-group .form-control:focus {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+  }
+  
+  .btn {
+    border-radius: 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .card-container .card {
+    animation: slideIn 0.5s ease-in-out;
+  }
+  

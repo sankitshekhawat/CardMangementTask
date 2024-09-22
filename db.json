@@ -1,0 +1,37 @@
+{
+  "buckets": [
+    {
+      "id": "1",
+      "name": "Entertainment Videos",
+      "cards": [
+        {
+          "name": "Youtube",
+          "link": "https://www.youtube.com/shorts/9TUdmNwgzuM",
+          "id": 1726979062140
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Educational Videos",
+      "cards": [
+        {
+          "name": "Cricket",
+          "link": "https://www.youtube.com/shorts/9TUdmNwgzuM",
+          "id": 1726982661072
+        }
+      ]
+    },
+    {
+      "id": "1726974884238",
+      "name": "sankit",
+      "cards": [
+        {
+          "name": "youtube",
+          "link": "",
+          "id": 1726990727530
+        }
+      ]
+    }
+  ]
+}

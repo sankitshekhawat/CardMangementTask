@@ -1,0 +1,281 @@
+/* Style for the main container */
+.bcontainer {
+    width: 50%; /* Increase the width slightly for better visual space */
+    height: 250px; /* Increase height to give more space to buttons */
+    border: 2px solid #333; /* Darker border for a more subtle look */
+    border-radius: 15px; /* Rounded corners for modern design */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    display: flex; /* Use flex for alignment */
+    justify-content: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+    background-color: #f0f0f0; /* Light background color */
+    padding: 20px; /* Space inside the container */
+    margin: 20px auto; /* Center the container on the page */
+}
+
+/* Style for the buttons */
+button {
+    background-color: red;
+    border-radius: 42px;
+    width: 80px; /* Slightly larger button width */
+    height: 50px; /* Adjust height for balance */
+     /* Even margin around buttons */
+    border: none; /* Remove default border */
+    color: white; /* Button text color */
+    font-size: 14px; /* Text size inside the button */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect on buttons */
+button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Style for the container holding buttons */
+.scontainer {
+    display: flex; /* Flex layout for buttons */
+    justify-content: space-between; /* Space between buttons */
+    position: relative;
+    padding: 12px;
+    gap: 10px; /* Space between buttons */
+}
+
+/*from this below is CSStask.js*/
+/* Profile Card Styling */
+/* Profile Card Styling */
+
+.profile-card{
+    width: 300px;
+    height: 400px;
+    border: 2px solid gray;
+    border-radius: 12px;
+    transition: transform 1.5s ease-out; /* Smooth transition on hover */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Ensures proper positioning */
+}
+
+/* Left to Right Sliding Effect on Hover */
+.profile-card:hover {
+    transform: translateX(550px); /* Moves the card 50px to the right */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Profile Image */
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: 1.2s ease-in-out;
+}
+
+.profile-img:hover {
+    width: 140px;
+    height: 140px;
+    border: 2px solid #d32f2f;
+}
+
+/* Bio Styling */
+.bio {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    padding: 10px;
+    position: relative;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex; /* This turns the navbar into a flex container */
+    justify-content: space-between; /* Align the logo and nav links with space between */
+    align-items: center; /* Vertically center items */
+    padding: 20px;
+    background-color: #333;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: white;
+  }
+  
+  /* Nav Links */
+  .nav-links {
+    display: flex; /* Makes the nav links a flex container */
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #d32f2f; /* Hover effect */
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    /* Flex-direction column to stack elements vertically */
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    /* Hide the nav links in mobile view */
+    .nav-links {
+      display: none; /* Hidden initially */
+      flex-direction: column; /* Stack the nav links vertically */
+      width: 100%; /* Full width */
+      background-color: #444; /* Background for mobile menu */
+    }
+  
+    .nav-links li {
+      margin: 10px 0; /* Space between links */
+    }
+  
+    /* Display hamburger icon */
+    .hamburger {
+      display: block;
+    }
+  
+    /* Toggle display of nav links when hamburger is clicked */
+    .navbar.active .nav-links {
+      display: flex; /* Display the nav links */
+    }
+  }
+  
+  /* chat Application.css*/
+
+  /* Overall container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Chat box */
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  overflow-y: scroll;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.chat-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+/* Individual chat message */
+.chat-message {
+  padding: 8px;
+  margin: 5px 0;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  align-self: flex-start;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.chat-message:nth-child(odd) {
+  background-color: #28a745;
+  align-self: flex-end;
+}
+
+/* Message input and button */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  width: 18%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Message animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
